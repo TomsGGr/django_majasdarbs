@@ -21,7 +21,7 @@ def pirmais_skats(request):
 			response = full_name + ' can not apply to university.'
 
 		if mathematics not in range(101) or latvian not in range(101) or foreign not in range(101):
-			response = 'Marks are oupy manage.pyt of range!'
+			response = 'Marks are out of range!'
 
 		return HttpResponse(response)
 
@@ -47,7 +47,7 @@ def ierasanaas_skats(request):
 		reason = request.POST['reason_why']
 
 
-		teksts = "<b>" + full_name + " will arive at " + date + "</b><br>Reason: " + reason
+		teksts = "<font style='font-family: Arial'><b>" + full_name + " will arive at " + date + "</b><br>Reason: " + reason + "</font>"
 
 		return HttpResponse(teksts)
 
