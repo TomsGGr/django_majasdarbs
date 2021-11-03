@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+</head>
+<body>
+
+<form action="" method="post" style = "font-family: Arial">
+	{% csrf_token %}
+	<b>Visitor:</b> <input type="text" name="visitor_name"><br><br>
+	Date, time: <input type="text" name="date_time"><br><br>
+	Reason: <input type="text" name="reason_why"><br><br>
+	<input type="submit">
+</form>
+
+</body>
+</html>
